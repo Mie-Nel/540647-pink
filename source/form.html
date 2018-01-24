@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-img" src="#" width="" height="" alt="Приложение Pink">
       </a>
       <nav class="main-nav">
@@ -30,7 +30,7 @@
     </header>
     <main class="page-main">
       <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</h2>
-      <form class="page-form" method="post">
+      <form class="page-form" method="post" action="https://echo.htmlacademy.ru">
         <fieldset class="form-group">
           <label class="field-text">
             <span class="field-text__label">Фамилия:</span>
@@ -75,11 +75,11 @@
         <fieldset class="form-group">
           <label class="field-text">
             <span class="field-text__label">Номер телефона</span>
-            <input class="field-text__input" type="text" name="name" placeholder="Номер, пожалуйста">
+            <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
           </label>
           <label class="field-text">
             <span class="field-text__label">Адрес почты</span>
-            <input class="field-text__input" type="text" name="name" placeholder="Введите почту *">
+            <input class="field-text__input" type="email" name="email" placeholder="Введите почту *">
           </label>
         </fieldset>
         <fieldset class="form-group">
@@ -99,7 +99,7 @@
         </fieldset>
         <fieldset class="form-group">
           <legend class="form-group__title">Опишите свои эмоции</legend>
-          <textarea class="field-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="field-textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
         <button class="field-action" type="submit">Отправить форму</button>
         <p class="page-form__text">
@@ -123,10 +123,8 @@
           </li>
         </ul>
       </section>
-      <p class="page-footer__copyright copyright">Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__img" src="" width="" height="" alt="">
-        </a>
+      <p class="page-footer__copyright copyright">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
       </p>
     </footer>
   </body>
