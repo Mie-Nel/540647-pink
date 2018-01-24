@@ -11,114 +11,119 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="site-list__link">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="photo.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#">HTML Academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML Academy</a>
           </li>
         </ul>
       </nav>
       <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
-    <main class="main-form">
-      <h2 class="main-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</h2>
-      <form class="form-group" method="post">
-        <fieldset class="form-group__item">
-          <label class="field-label">Фамилия:
-            <input class="field-label_input" type="text" name="name" placeholder="Укажите фамилию *">
+    <main class="page-main">
+      <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</h2>
+      <form class="page-form" method="post">
+        <fieldset class="form-group">
+          <label class="field-text">
+            <span class="field-text__label">Фамилия:</span>
+            <input class="field-text__input" type="text" name="name" placeholder="Укажите фамилию *">
           </label>
-          <label class="field-label">Имя:
-            <input class="field-label_input" type="text" name="name" placeholder="Введите ваше имя *">
+          <label class="field-text">
+            <span class="field-text__label">Имя:</span>
+            <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя *">
           </label>
-          <label class="field-label">Отчество:
-            <input class="field-label_input" type="text" name="name" placeholder="Ну и отчество тоже">
+          <label class="field-text">
+            <span class="field-text__label">Отчество:</span>
+            <input class="field-text__input" type="text" name="name" placeholder="Ну и отчество тоже">
           </label>
         </fieldset>
-        <fieldset class="form-group__item">
+        <fieldset class="form-group">
           <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
-          <label class="">
-            <span class="">Сделал селфи с акулой</span>
-            <input class="" type="checkbox" name="Сделал селфи с акулой">
+          <label class="field-checkbox">
+            <span class="field-checkbox__label">Сделал селфи с акулой</span>
+            <input class="field-checkbox__input" type="checkbox" name="Сделал селфи с акулой">
           </label>
-          <label class="">
-            <span class="">Обгорел на пляже</span>
-            <input class="" type="checkbox" name="Обгорел на пляже">
+          <label class="field-checkbox">
+            <span class="field-checkbox__label">Обгорел на пляже</span>
+            <input class="field-checkbox__input" type="checkbox" name="Обгорел на пляже">
           </label>
-          <label class="">
-            <span class="">Видел Чака Норриса</span>
-            <input class="" type="checkbox" name="Видел Чака Норриса">
+          <label class="field-checkbox">
+            <span class="field-checkbox__label">Видел Чака Норриса</span>
+            <input class="field-checkbox__input" type="checkbox" name="Видел Чака Норриса">
           </label>
-          <label class="">
-            <span class="">Накупил сувениров</span>
-            <input class="" type="checkbox" name="Накупил сувениров">
+          <label class="field-checkbox">
+            <span class="field-checkbox__label">Накупил сувениров</span>
+            <input class="field-checkbox__input" type="checkbox" name="Накупил сувениров">
           </label>
-          <label class="">
-            <span class="">Удержал башню</span>
-            <input class="" type="checkbox" name="Удержал башню">
+          <label class="field-checkbox">
+            <span class="field-checkbox__label">Удержал башню</span>
+            <input class="field-checkbox__input" type="checkbox" name="Удержал башню">
           </label>
-          <label class="">
-            <span class="">Разгромил отель</span>
-            <input class="" type="checkbox" name="Разгромил отель">
-          </label>
-        </fieldset>
-        <fieldset class="form-group__item">
-          <label class="">Номер телефона
-            <input class="" type="text" name="name" placeholder="Номер, пожалуйста">
-          </label>
-          <label class="">адрес почты
-            <input class="" type="text" name="name" placeholder="Введите почту *">
+          <label class="field-checkbox">
+            <span class="field-checkbox__label">Разгромил отель</span>
+            <input class="field-checkbox__input" type="checkbox" name="Разгромил отель">
           </label>
         </fieldset>
-        <fieldset class="form-group__item">
+        <fieldset class="form-group">
+          <label class="field-text">
+            <span class="field-text__label">Номер телефона</span>
+            <input class="field-text__input" type="text" name="name" placeholder="Номер, пожалуйста">
+          </label>
+          <label class="field-text">
+            <span class="field-text__label">Адрес почты</span>
+            <input class="field-text__input" type="text" name="name" placeholder="Введите почту *">
+          </label>
+        </fieldset>
+        <fieldset class="form-group">
           <legend class="form-group__title">С каким приложением путешествовали?</legend>
-          <label class="">
-            <span class="">Pink для iOS</span>
-            <input class="" type="radio" name="app">
+          <label class="field-radio">
+            <span class="field-radio__label">Pink для iOS</span>
+            <input class="field-radio__input" type="radio" name="app">
           </label>
-          <label class="">
-            <span class="">Pink на Android</span>
-            <input class="" type="radio" name="app">
+          <label class="field-radio">
+            <span class="field-radio__label">Pink на Android</span>
+            <input class="field-radio__input" type="radio" name="app">
           </label>
-          <label class="">
-            <span class="">Windows Phone</span>
-            <input class="" type="radio" name="app">
+          <label class="field-radio">
+            <span class="field-radio__label">Windows Phone</span>
+            <input class="field-radio__input" type="radio" name="app">
           </label>
         </fieldset>
-        <fieldset class="form-group__item">
+        <fieldset class="form-group">
           <legend class="form-group__title">Опишите свои эмоции</legend>
-          <textarea placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="field-textarea" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
-        <button type="submit">Отправить форму</button>
-        <p>
-          <sup>*</sup>— обязательные поля
+        <button class="field-action" type="submit">Отправить форму</button>
+        <p class="page-form__text">
+          <span class="page-form__note">*</span>— обязательные поля
         </p>
       </form>
     </main>
     <footer class="page-footer">
       <img class="page-footer__logo" src="" width="" height="" alt="" >
-      <section class="socials">
+      <section class="page-footer__socials socials">
         <h3 class="visually-hidden">Социальные сети</h3>
         <ul class="socials__list">
-          <li class="soials__item">
-            <a class="socials__link" href="" aria-label="twitter"></a>
+          <li class="socials__item">
+            <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
           </li>
           <li class="soials__item">
-            <a class="socials__link" href="" aria-label="facebook"></a>
+            <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
           </li>
           <li class="soials__item">
-            <a class="socials__link" href="" aria-label="youtube"></a>
+            <a class="socials__link socials__link--youtube" href="" aria-label="youtube"></a>
           </li>
         </ul>
       </section>
-      <p class="copyright">Разработано
+      <p class="page-footer__copyright copyright">Разработано
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="copyright__img" src="" width="" height="" alt="">
         </a>
