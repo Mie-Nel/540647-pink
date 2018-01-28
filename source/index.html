@@ -3,29 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-img" src="#" width="" height="" alt="Приложение Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
       <section class="download">
@@ -76,8 +79,8 @@
       </section>
       <section class="price slider">
         <table class="price__table">
+          <div class="price__hit"></div>
           <tr class="price__item">
-            <div class="price__hit"></div>
             <th class="price__title">Стандарт 3,99 USD</th>
           </tr>
           <tr class="price__item">
@@ -119,5 +122,3 @@
     </main>
   </body>
 </html>
-
-
