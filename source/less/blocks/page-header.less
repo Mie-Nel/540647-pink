@@ -1,9 +1,12 @@
 .page-header {
+  display: flex;
+  justify-content: space-between;
   min-height: 462px;
-  padding: 0 20px;
+  padding: 20px 20px;
   background-color: @bg-darkblue;
-  background: url("../img/iphone-hand-mobile@1x.png") no-repeat 0 bottom,
-              url("../img/bg-back-mobile@1x.jpg") no-repeat 0 0;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 bottom, 0 0;
   background-size: 258px 286px, cover;
 }
 
