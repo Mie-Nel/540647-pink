@@ -3,129 +3,133 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-img" src="#" width="" height="" alt="Приложение Pink">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="photo.html">Фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
-      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-    </header>
-    <main class="page-main">
-      <h2 class="page-main__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните</h2>
-      <form class="page-form" method="post" action="https://echo.htmlacademy.ru">
-        <fieldset class="form-group">
-          <label class="field-text">
-            <span class="field-text__label">Фамилия:</span>
-            <input class="field-text__input" type="text" name="name" placeholder="Укажите фамилию *">
-          </label>
-          <label class="field-text">
-            <span class="field-text__label">Имя:</span>
-            <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя *">
-          </label>
-          <label class="field-text">
-            <span class="field-text__label">Отчество:</span>
-            <input class="field-text__input" type="text" name="name" placeholder="Ну и отчество тоже">
-          </label>
-        </fieldset>
-        <fieldset class="form-group">
-          <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
-          <label class="field-checkbox">
-            <span class="field-checkbox__label">Сделал селфи с акулой</span>
-            <input class="field-checkbox__input" type="checkbox" name="Сделал селфи с акулой">
-          </label>
-          <label class="field-checkbox">
-            <span class="field-checkbox__label">Обгорел на пляже</span>
-            <input class="field-checkbox__input" type="checkbox" name="Обгорел на пляже">
-          </label>
-          <label class="field-checkbox">
-            <span class="field-checkbox__label">Видел Чака Норриса</span>
-            <input class="field-checkbox__input" type="checkbox" name="Видел Чака Норриса">
-          </label>
-          <label class="field-checkbox">
-            <span class="field-checkbox__label">Накупил сувениров</span>
-            <input class="field-checkbox__input" type="checkbox" name="Накупил сувениров">
-          </label>
-          <label class="field-checkbox">
-            <span class="field-checkbox__label">Удержал башню</span>
-            <input class="field-checkbox__input" type="checkbox" name="Удержал башню">
-          </label>
-          <label class="field-checkbox">
-            <span class="field-checkbox__label">Разгромил отель</span>
-            <input class="field-checkbox__input" type="checkbox" name="Разгромил отель">
-          </label>
-        </fieldset>
-        <fieldset class="form-group">
-          <label class="field-text">
-            <span class="field-text__label">Номер телефона</span>
-            <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
-          </label>
-          <label class="field-text">
-            <span class="field-text__label">Адрес почты</span>
-            <input class="field-text__input" type="email" name="email" placeholder="Введите почту *">
-          </label>
-        </fieldset>
-        <fieldset class="form-group">
-          <legend class="form-group__title">С каким приложением путешествовали?</legend>
-          <label class="field-radio">
-            <span class="field-radio__label">Pink для iOS</span>
-            <input class="field-radio__input" type="radio" name="app">
-          </label>
-          <label class="field-radio">
-            <span class="field-radio__label">Pink на Android</span>
-            <input class="field-radio__input" type="radio" name="app">
-          </label>
-          <label class="field-radio">
-            <span class="field-radio__label">Windows Phone</span>
-            <input class="field-radio__input" type="radio" name="app">
-          </label>
-        </fieldset>
-        <fieldset class="form-group">
-          <legend class="form-group__title">Опишите свои эмоции</legend>
-          <textarea class="field-textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-        </fieldset>
-        <button class="field-action" type="submit">Отправить форму</button>
-        <p class="page-form__text">
-          <span class="page-form__note">*</span>— обязательные поля
+    <div class="page-wrapper">
+      <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </header>
+      <main class="page-main">
+        <form class="page-form" method="post" action="https://echo.htmlacademy.ru">
+          <p class="page-form__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <fieldset class="form-group">
+            <label class="field-text">
+              <span class="field-text__label">Фамилия:</span>
+              <input class="field-text__input" type="text" name="name" placeholder="Укажите фамилию *">
+            </label>
+            <label class="field-text">
+              <span class="field-text__label">Имя:</span>
+              <input class="field-text__input" type="text" name="name" placeholder="Введите ваше имя *">
+            </label>
+            <label class="field-text">
+              <span class="field-text__label">Отчество:</span>
+              <input class="field-text__input" type="text" name="name" placeholder="Ну и отчество тоже">
+            </label>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
+            <label class="field-checkbox">
+              <span class="field-checkbox__label">Сделал селфи с акулой</span>
+              <input class="field-checkbox__input" type="checkbox" name="Сделал селфи с акулой">
+            </label>
+            <label class="field-checkbox">
+              <span class="field-checkbox__label">Обгорел на пляже</span>
+              <input class="field-checkbox__input" type="checkbox" name="Обгорел на пляже">
+            </label>
+            <label class="field-checkbox">
+              <span class="field-checkbox__label">Видел Чака Норриса</span>
+              <input class="field-checkbox__input" type="checkbox" name="Видел Чака Норриса">
+            </label>
+            <label class="field-checkbox">
+              <span class="field-checkbox__label">Накупил сувениров</span>
+              <input class="field-checkbox__input" type="checkbox" name="Накупил сувениров">
+            </label>
+            <label class="field-checkbox">
+              <span class="field-checkbox__label">Удержал башню</span>
+              <input class="field-checkbox__input" type="checkbox" name="Удержал башню">
+            </label>
+            <label class="field-checkbox">
+              <span class="field-checkbox__label">Разгромил отель</span>
+              <input class="field-checkbox__input" type="checkbox" name="Разгромил отель">
+            </label>
+          </fieldset>
+          <fieldset class="form-group">
+            <label class="field-text">
+              <span class="field-text__label">Номер телефона</span>
+              <input class="field-text__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+            </label>
+            <label class="field-text">
+              <span class="field-text__label">Адрес почты</span>
+              <input class="field-text__input" type="email" name="email" placeholder="Введите почту *">
+            </label>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group__title">С каким приложением путешествовали?</legend>
+            <label class="field-radio">
+              <span class="field-radio__label">Pink для iOS</span>
+              <input class="field-radio__input" type="radio" name="app">
+            </label>
+            <label class="field-radio">
+              <span class="field-radio__label">Pink на Android</span>
+              <input class="field-radio__input" type="radio" name="app">
+            </label>
+            <label class="field-radio">
+              <span class="field-radio__label">Windows Phone</span>
+              <input class="field-radio__input" type="radio" name="app">
+            </label>
+          </fieldset>
+          <fieldset class="form-group">
+            <legend class="form-group__title">Опишите свои эмоции</legend>
+            <textarea class="field-textarea" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </fieldset>
+          <button class="field-action btn" type="submit">Отправить форму</button>
+          <p class="page-form__text">
+            <span class="page-form__note">*</span>— обязательные поля
+          </p>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="" >
+        <section class="page-footer__socials socials">
+          <h3 class="visually-hidden">Социальные сети</h3>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
+            </li>
+            <li class="soials__item">
+              <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
+            </li>
+            <li class="soials__item">
+              <a class="socials__link socials__link--youtube" href="" aria-label="youtube"></a>
+            </li>
+          </ul>
+        </section>
+        <p class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
         </p>
-      </form>
-    </main>
-    <footer class="page-footer">
-      <img class="page-footer__logo" src="" width="" height="" alt="" >
-      <section class="page-footer__socials socials">
-        <h3 class="visually-hidden">Социальные сети</h3>
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
-          </li>
-          <li class="soials__item">
-            <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
-          </li>
-          <li class="soials__item">
-            <a class="socials__link socials__link--youtube" href="" aria-label="youtube"></a>
-          </li>
-        </ul>
-      </section>
-      <p class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
