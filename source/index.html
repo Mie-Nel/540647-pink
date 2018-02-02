@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
@@ -9,28 +10,28 @@
   <body>
     <div class="page-wrapper">
       <header class="page-header">
-        <a class="page-header__logo">
-          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
-        </a>
-        <nav class="main-nav main-nav--closed">
-          <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main class="page-main">
+        <div class="page-header__wrapper">
+          <a class="page-header__logo">
+            <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
+          </a>
+          <nav class="main-nav main-nav--closed">
+            <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <section class="download">
           <a class="download__btn btn" href="#">Скачать приложение</a>
           <ul class="download__list">
@@ -46,6 +47,23 @@
           </ul>
             <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </section>
+      </header>
+      <main class="page-main">
+        <!-- <section class="download">
+          <a class="download__btn btn" href="#">Скачать приложение</a>
+          <ul class="download__list">
+            <li class="download__item">
+              <a class="download__link download__link--apple" href="#" aria-label="apple"></a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--android" href="#" aria-label="android"></a>
+            </li>
+            <li class="download__item">
+              <a class="download__link download__link--windows" href="#" aria-label="windows"></a>
+            </li>
+          </ul>
+            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </section> -->
         <section class="features">
           <p class="features__slogan">Устали от серости мегаполиса?</p>
           <p class="features__slogan">Нам есть, что вам предложить!</p>
@@ -63,11 +81,17 @@
               <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
+          <div class="features__addition">
+            <p class="features__title">Эффект на 24 часа!</p>
+            <p class="features__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="features__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </section>
         <section class="reviews slider">
           <ul class="reviews__list slider__list">
             <li class="reveiws__item slider__item">
               <b class="reviews__author">Николай Петров</b>
+              <b class="reviews__author-addition">25 лет, водитель трамвая</b>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
           </ul>
@@ -81,16 +105,28 @@
           <div class="price__hit"></div>
           <table class="price__table">
             <tr class="price__item">
-              <th class="price__title">Стандарт 3,99 USD</th>
+              <th class="empty-cell"></th>
+              <th class="price__title price__title-addition">База<br>1,99 USD</th>
+              <th class="price__title">Стандарт<br>3,99 USD</th>
+              <th class="price__title price__title-addition">Анлим<br>9,99 USD</th>
             </tr>
             <tr class="price__item">
               <td class="price__text">Розовый фильтр</td>
+              <td class="price__text"></td>
+              <td class="price__text"></td>
+              <td class="price__text"></td>
             </tr>
             <tr class="price__item">
               <td class="price__text">Смайлики</td>
+              <td class="price__text"></td>
+              <td class="price__text"></td>
+              <td class="price__text"></td>
             </tr>
             <tr class="price__item">
               <td class="price__text">Комментарии</td>
+              <td class="price__text"></td>
+              <td class="price__text"></td>
+              <td class="price__text"></td>
             </tr>
           </table>
           <p class="price__toggles slider__toggles">

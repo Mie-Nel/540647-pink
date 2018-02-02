@@ -1,10 +1,31 @@
 .price__table {
   width: 100%;
+  border-collapse: collapse;
+}
+
+.empty-cell {
+  display: none;
+}
+
+.price__title-addition {
+  display: none;
+}
+
+.price__title {
+  padding: 25px 30px;
+  background-color: @bg-darkblue;
+  font-size: 18px;
+  line-height: 30px;
+  color: @font-color-white;
+  text-align: center;
 }
 
 .price__text {
+  padding: 15px 45px;
   line-height: 30px;
   color: @bg-darkblue;
+  text-transform: uppercase;
+  border-bottom: 2px solid @bg-grey;
 }
 
 .price__toggles {

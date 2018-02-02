@@ -1,5 +1,26 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .gallery__text {
-  margin: 0;
+  min-width: 280px;
+  margin: 0 auto;
+  padding: 50px 20px;
   line-height: 30px;
   color: @bg-darkblue;
+}
+
+@media (min-width: @tablet-width) {
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .gallery__text {
+    width: 500px;
+  }
 }

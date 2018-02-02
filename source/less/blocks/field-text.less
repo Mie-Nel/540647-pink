@@ -1,4 +1,34 @@
+.field-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .field-text__label {
+  width: 280px;
+  margin-bottom: 15px;
   line-height: 30px;
   color: #d22856;
+}
+
+.field-text__input {
+  margin-bottom: 20px;
+  padding: 15px 10px;
+}
+
+@media (min-width: @tablet-width) {
+  .field-text {
+    min-width: 620px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .field-text__label {
+    width: 100px;
+    padding: 15px 10px;
+  }
+
+  .field-text__input {
+    flex-grow: 1;
+  }
 }
