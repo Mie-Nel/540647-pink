@@ -1,5 +1,12 @@
 .field-textarea {
   width: 280px;
   height: 200px;
-  margin: 0 auto;
+
+  @media(min-width: @tablet-width) {
+    width: 500px;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 820px;
+  }
 }

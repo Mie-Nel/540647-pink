@@ -1,5 +1,23 @@
+.page-form__wrapper {
+  @media(min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media(min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .page-form__text {
   margin: 0;
   padding: 50px 20px;
   text-align: center;
+}
+
+.page-form__text:last-child {
+  @media(min-width: @tablet-width) {
+    float: right;
+  }
 }

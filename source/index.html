@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -33,6 +32,7 @@
           </nav>
         </div>
         <section class="download">
+          <p class="download__title">Взгляните на жизнь иначе!</p>
           <a class="download__btn btn" href="#">Скачать приложение</a>
           <ul class="download__list">
             <li class="download__item">
@@ -49,21 +49,6 @@
         </section>
       </header>
       <main class="page-main">
-        <!-- <section class="download">
-          <a class="download__btn btn" href="#">Скачать приложение</a>
-          <ul class="download__list">
-            <li class="download__item">
-              <a class="download__link download__link--apple" href="#" aria-label="apple"></a>
-            </li>
-            <li class="download__item">
-              <a class="download__link download__link--android" href="#" aria-label="android"></a>
-            </li>
-            <li class="download__item">
-              <a class="download__link download__link--windows" href="#" aria-label="windows"></a>
-            </li>
-          </ul>
-            <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section> -->
         <section class="features">
           <p class="features__slogan">Устали от серости мегаполиса?</p>
           <p class="features__slogan">Нам есть, что вам предложить!</p>
@@ -105,7 +90,7 @@
           <div class="price__hit"></div>
           <table class="price__table">
             <tr class="price__item">
-              <th class="empty-cell"></th>
+              <th class="price__title price__title-addition price__title-addition--empty"></th>
               <th class="price__title price__title-addition">База<br>1,99 USD</th>
               <th class="price__title">Стандарт<br>3,99 USD</th>
               <th class="price__title price__title-addition">Анлим<br>9,99 USD</th>
@@ -152,10 +137,30 @@
             </li>
           </ul>
           <div class="map">
-            <img class="map_img" src="" width="" height="" alt="">
+            <iframe class="map__frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412368!2d30.320894615666827!3d59.938796869048424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1512663593314" allowfullscreen></iframe>
           </div>
         </section>
       </main>
+      <footer class="page-footer page-footer--index">
+        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="" >
+        <section class="page-footer__socials socials">
+          <h3 class="visually-hidden">Социальные сети</h3>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--youtube" href="" aria-label="youtube"></a>
+            </li>
+          </ul>
+        </section>
+        <p class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+        </p>
+      </footer>
     </div>
   </body>
 </html>

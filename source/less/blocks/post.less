@@ -4,41 +4,87 @@
 
 .post__img {
   display: block;
+  width: 280px;
   padding: 20px;
+  padding-bottom: 0;
+
+  @media(min-width: @tablet-width) {
+    width: 300px;
+    padding: 0 20px;
+  }
 }
 
 .post__title {
   margin: 0;
-  padding: 50px 20px;
+  padding: 50px 10px;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   background-color: #ffffff;
   text-align: center;
+  color: @bg-darkblue;
+}
+
+.post__wrapper {
+  @media(min-width: @tablet-width) {
+    height: 410px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+}
+
+.post__edit {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  text-align: center;
+
+  @media(min-width: @tablet-width) {
+    flex-direction: column;
+    width: 300px;
+    padding: 30px 0;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 410px;
+  }
+}
+
+.post__edit-btn {
+  background-color: transparent;
+  border: none;
+  fill: #b5b9be;
+}
+
+.post__edit-btn--color {
+  fill: #d22856;
+}
+
+.post__toggle {
+    width: 280px;
+    padding: 40px 20px;
+
+    @media(min-width: @tablet-width) {
+    width: 300px;
+    padding: 30px 0;
+  }
+
+  @media(min-width: @desktop-width) {
+    width: 400px;
+  }
 }
 
 .post__btn {
   width: 280px;
-  margin: 0 20px;
+  margin-bottom: 10px;
+  background-color: transparent;
   border-color: #d22856;
   color: #d22856;
 }
 
-@media (min-width: @tablet-width) {
-  .post {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .post__title {
-    width: 620px;
-  }
-
-  .post__img {
-    width: 300px;
-  }
-
-  .post__toggle {
-    width: 300px;
-  }
+.post__btn--cancel {
+  border-color: #dddfe0;
+  color: #dddfe0;
 }

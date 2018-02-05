@@ -1,5 +1,14 @@
 .reviews {
   padding: 50px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 700px;
+    margin: 0 auto;
+  }
 }
 
 .reviews__list {
@@ -21,11 +30,9 @@
   display: none;
   font-size: 14px;
   font-weight: lighter;
-}
 
-@media (min-width: @tablet-width) {
-  .reviews__author-addition {
-    display: block;
+  @media (min-width: @tablet-width) {
+      display: block;
   }
 }
 
