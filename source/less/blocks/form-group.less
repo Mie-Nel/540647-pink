@@ -1,11 +1,38 @@
 .form-group {
   margin: 0;
-  padding: 0 20px;
+  padding: 40px 0;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    outline: 2px solid @bg-grey;
+  }
+}
+
+.form-group:nth-child(1) {
+  @media (min-width: @tablet-width) {
+    order: -3;
+  }
+}
+
+.form-group:nth-child(4) {
+  @media (min-width: @tablet-width) {
+    order: -2;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 300px;
+  }
+}
+
+.form-group:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    order: -1;
+  }
 }
 
 .form-group__title {
-  padding: 0;
   line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
   color: #d22856;
 }

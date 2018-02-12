@@ -2,15 +2,15 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-    <div class="page-wrapper">
-      <header class="page-header">
+    <header class="page-header page-header--inner">
+      <div class="page-header__wrapper">
         <a class="page-header__logo" href="index.html">
-          <img class="page-header__logo-img" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
+          <img class="page-header__logo-img page-header__logo-img--inner" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Приложение Pink">
         </a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
@@ -30,11 +30,12 @@
           </ul>
         </nav>
         <h1 class="page-header__title">Фотографии пользователей</h1>
-      </header>
+      </div>
+    </header>
       <main class="page-main">
         <section class="gallery">
           <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <article class="photo">
+          <article class="photo photo--wide">
             <img class="photo__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="">
             <div class="photo__wrapper">
               <p class="photo__author">Анна
@@ -47,111 +48,140 @@
               </p>
             </div>
           </article>
-          <article class="photo">
-            <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
-            <div class="photo__wrapper">
-              <p class="photo__author">Левон
-                <span class="photo__time">(5 часов назад)</span>
-              </p>
-              <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <p class="photo__like">
-                <button class="Photo__btn" type="button" aria-label="Нравится"></button>
-                <span class="photo__like-text">Нравится: 215</span>
-              </p>
-            </div>
-          </article>
-          <article class="photo">
-            <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
-            <div class="photo__wrapper">
-              <p class="photo__author">Антон
-                <span class="photo__time">(12 часов назад)</span>
-              </p>
-              <p class="photo__text">Соседи будут рады!</p>
-              <p class="photo__like">
-                <button class="Photo__btn" type="button" aria-label="Нравится"></button>
-                <span class="photo__like-text">Нравится: 215</span>
-              </p>
-            </div>
-          </article>
-          <article class="photo">
-            <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
-            <div class="photo__wrapper">
-              <p class="photo__author">Борис
-                <span class="photo__time">(20 часов назад)</span>
-              </p>
-              <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <p class="photo__like">
-                <button class="Photo__btn" type="button" aria-label="Нравится"></button>
-                <span class="photo__like-text">Нравится: 215</span>
-              </p>
-            </div>
-          </article>
-          <article class="photo">
-            <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
-            <div class="photo__wrapper">
-              <p class="photo__author">Сергей
-                <span class="photo__time">(25 часов назад)</span>
-              </p>
-              <p class="photo__text">Самая кубанская в мире!</p>
-              <p class="photo__like">
-                <button class="Photo__btn" type="button" aria-label="Нравится"></button>
-                <span class="photo__like-text">Нравится: 215</span>
-              </p>
-            </div>
-          </article>
-          <article class="photo">
-            <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
-            <div class="photo__wrapper">
-              <p class="photo__author">Максим
-                <span class="photo__time">(40 часов назад)</span>
-              </p>
-              <p class="photo__text">Где снег-то?</p>
-              <p class="photo__like">
-                <button class="Photo__btn" type="button" aria-label="Нравится"></button>
-                <span class="photo__like-text">Нравится: 215</span>
-              </p>
-            </div>
-          </article>
-          <article class="photo">
-            <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
-            <div class="photo__wrapper">
-              <p class="photo__author">Надежда (45 часов назад)
-                <span class="photo__time">(45 часов назад)</span>
-              </p>
-              <p class="photo__text">Всем GM и взаимные лайки!</p>
-              <p class="photo__like">
-                <button class="Photo__btn" type="button" aria-label="Нравится"></button>
-                <span class="photo__like-text">Нравится: 215</span>
-              </p>
-            </div>
-          </article>
+          <div class="photo__container">
+            <article class="photo">
+              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="">
+              <div class="photo__wrapper">
+                <p class="photo__author">Левон
+                  <span class="photo__time">(5 часов назад)</span>
+                </p>
+                <p class="photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <p class="photo__like">
+                  <button class="Photo__btn" type="button" aria-label="Нравится"></button>
+                  <span class="photo__like-text">Нравится: 215</span>
+                </p>
+              </div>
+            </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="">
+              <div class="photo__wrapper">
+                <p class="photo__author">Антон
+                  <span class="photo__time">(12 часов назад)</span>
+                </p>
+                <p class="photo__text">Соседи будут рады!</p>
+                <p class="photo__like">
+                  <button class="Photo__btn" type="button" aria-label="Нравится"></button>
+                  <span class="photo__like-text">Нравится: 215</span>
+                </p>
+              </div>
+            </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="">
+              <div class="photo__wrapper">
+                <p class="photo__author">Борис
+                  <span class="photo__time">(20 часов назад)</span>
+                </p>
+                <p class="photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <p class="photo__like">
+                  <button class="Photo__btn" type="button" aria-label="Нравится"></button>
+                  <span class="photo__like-text">Нравится: 215</span>
+                </p>
+              </div>
+            </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="">
+              <div class="photo__wrapper">
+                <p class="photo__author">Сергей
+                  <span class="photo__time">(25 часов назад)</span>
+                </p>
+                <p class="photo__text">Самая кубанская в мире!</p>
+                <p class="photo__like">
+                  <button class="Photo__btn" type="button" aria-label="Нравится"></button>
+                  <span class="photo__like-text">Нравится: 215</span>
+                </p>
+              </div>
+            </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="">
+              <div class="photo__wrapper">
+                <p class="photo__author">Максим
+                  <span class="photo__time">(40 часов назад)</span>
+                </p>
+                <p class="photo__text">Где снег-то?</p>
+                <p class="photo__like">
+                  <button class="Photo__btn" type="button" aria-label="Нравится"></button>
+                  <span class="photo__like-text">Нравится: 215</span>
+                </p>
+              </div>
+            </article>
+            <article class="photo">
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="">
+              <div class="photo__wrapper">
+                <p class="photo__author">Надежда (45 часов назад)
+                  <span class="photo__time">(45 часов назад)</span>
+                </p>
+                <p class="photo__text">Всем GM и взаимные лайки!</p>
+                <p class="photo__like">
+                  <button class="Photo__btn" type="button" aria-label="Нравится"></button>
+                  <span class="photo__like-text">Нравится: 215</span>
+                </p>
+              </div>
+            </article>
+          </div>
         </section>
         <section class="post">
           <h2 class="post__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</h2>
-          <img class="post__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="">
-          <button class="post__btn btn">Запостить</button>
-          <button class="post__btn btn">Отмена</button>
+          <div class="post__wrapper">
+            <img class="post__img" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="">
+            <div class="post__edit">
+              <button class="post__edit-btn post__edit-btn--color">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                </svg>
+              </button>
+              <button class="post__edit-btn">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                  <path fill="none" d="M0,0h48v48H0V0z"/>
+                  <path d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                  <rect y="40" width="48" height="3"/>
+                </svg>
+              </button>
+              <button class="post__edit-btn">
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                  <path fill="#b5b9be" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                  <path d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                </svg>
+              </button>
+            </div>
+            <div class="post__toggle">
+              <button class="post__btn btn">Запостить</button>
+              <button class="post__btn post__btn--cancel btn">Отмена</button>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="page-footer">
-        <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="" >
-        <section class="page-footer__socials socials">
-          <h3 class="visually-hidden">Социальные сети</h3>
-          <ul class="socials__list">
-            <li class="socials__item">
-              <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
-            </li>
-            <li class="soials__item">
-              <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
-            </li>
-            <li class="soials__item">
-              <a class="socials__link socials__link--youtube" href="" aria-label="youtube"></a>
-            </li>
-          </ul>
-        </section>
-        <p class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
-        </p>
+        <div class="page-footer__wrapper">
+          <img class="page-footer__logo" src="img/logo-pink-blue-mobile.svg" width="146" height="40" alt="" >
+          <section class="page-footer__socials socials">
+            <h3 class="visually-hidden">Социальные сети</h3>
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link socials__link--twitter" href="" aria-label="twitter"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--facebook" href="" aria-label="facebook"></a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--youtube" href="" aria-label="youtube"></a>
+              </li>
+            </ul>
+          </section>
+          <p class="page-footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+          </p>
+        </div>
       </footer>
     </div>
   </body>

@@ -1,10 +1,55 @@
-.page-form__text {
-  margin: 0;
-  padding: 0 20px;
-  text-align: center;
+.page-form__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    padding: 0 10px;
+  }
 }
 
-.field-action {
-  background-color: #2aab6d;
-  border-radius: 5px;
+.page-form__wrapper-bottom {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 620px;
+    margin: 0 auto;
+    padding: 65px 20px;
+  }
+}
+
+.page-form__text {
+  width: 280px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    padding: 94px 80px;
+    padding-bottom: 75px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 800px;
+    padding: 94px 70px;
+  }
+}
+
+.page-form__text--bottom {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    padding: 0;
+    text-align: right;
+  }
 }

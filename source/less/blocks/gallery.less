@@ -1,5 +1,23 @@
 .gallery__text {
-  margin: 0;
+  width: 200px;
+  margin: 0 auto;
+  padding: 53px 0;
+  font-size: 14px;
   line-height: 30px;
+  font-weight: normal;
+  text-align: center;
   color: @bg-darkblue;
+
+  @media (min-width: @tablet-width) {
+    width: 400px;
+    padding-top: 97px;
+    padding-bottom: 77px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 560px;
+    padding-top: 90px;
+    padding-bottom: 87px;
+  }
 }

@@ -1,4 +1,40 @@
+.form-group--bg-grey {
+  background-color: @bg-grey;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
+.form-group--bg-grey .form-group__title {
+  width: 220px;
+}
+
+.field-checkbox {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-bottom: 35px;
+    padding-left: 120px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-flex;
+    padding-left: 40px;
+  }
+}
+
+.field-checkbox:last-child {
+  margin-bottom: 0;
+}
+
 .field-checkbox__label {
+  padding-left: 70px;
   font-size: 18px;
   line-height: 30px;
   color: @bg-darkblue;

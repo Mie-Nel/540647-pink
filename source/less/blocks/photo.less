@@ -1,11 +1,73 @@
+.photo {
+  margin-bottom: 20px;
+}
+
+.photo__container .photo {
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
+}
+
 .photo__img {
   display: block;
   margin: 0 auto;
 }
 
+.photo__container .photo__img {
+  @media (min-width: @tablet-width) {
+    height: 300px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 400px;
+  }
+}
+
 .photo__wrapper {
-  margin: 0 20px;
+  padding: 20px 15px;
   background-color: @bg-grey;
+}
+
+.photo--wide .photo__wrapper {
+  width: 250px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 590px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 910px;
+  }
+}
+
+.photo__container .photo__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+  }
+}
+
+.photo__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    padding: 0 10px;
+  }
 }
 
 .photo__author {
@@ -20,11 +82,28 @@
 
 .photo__like {
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-top: auto;
+  }
+}
+
+.photo--wide .photo__like {
+  @media (min-width: @tablet-width) {
+    margin-left: auto;
+  }
 }
 
 .photo__text {
   margin: 0;
   line-height: 30px;
+}
+
+.photo--wide .photo__text {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    order: 3;
+  }
 }
 
 .photo__like-text {
