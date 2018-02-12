@@ -1,12 +1,23 @@
 .main-nav {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
   width: 50px;
   height: 24px;
   background-color: transparent;
@@ -16,32 +27,24 @@
 .main-nav--opened .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 25px;
+  right: 20px;
   width: 24px;
   height: 24px;
   background-color: transparent;
   background-image: url("../img/icon-menu-cross.svg");
 }
 
-.main-nav__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
 .main-nav__list {
   display: none;
+  width: 320px;
   background-color: @bg-darkblue;
   .reset-list;
 }
 
 .main-nav__link {
   display: block;
-  padding: 20px 0;
+  padding: 15px 0;
   border-bottom: 2px solid #000000;
   border-top: 2px solid #485461;
   text-decoration: none;
@@ -50,5 +53,11 @@
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
+  text-transform: uppercase;
   cursor: pointer;
+}
+
+.main-nav__link--top {
+  text-align: left;
+  padding: 25px 20px;
 }
