@@ -1,0 +1,51 @@
+.page-main {
+  position: relative;
+}
+
+.page-main__title {
+  position: absolute;
+  top: -140px;
+  left: 50%;
+  width: 180px;
+  margin: 0 auto;
+  margin-left: -90px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: lighter;
+  color: @font-color-white;
+  text-align: center;
+
+
+  &--photo {
+    @media (min-width: @tablet-width) {
+      top: -300px;
+      width: 380px;
+      margin-left: -190px;
+      font-size: 50px;
+      line-height: 70px;
+  }
+
+    @media (min-width: @desktop-width) {
+      top: -250px;
+    }
+  }
+
+  &--form {
+    width: 250px;
+    margin-left: -125px;
+
+    @media (min-width: @tablet-width) {
+      top: -300px;
+      width: 500px;
+      margin-left: -250px;
+      font-size: 50px;
+      line-height: 70px;
+  }
+
+    @media (min-width: @desktop-width) {
+      top: -250px;
+      width: 800px;
+      margin-left: -400px;
+    }
+  }
+}

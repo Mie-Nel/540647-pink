@@ -12,8 +12,9 @@
 }
 
 .price__table {
-  width: 600px;
+  width: 320px;
   margin: 0 auto;
+  border-collapse: collapse;
 
   @media (min-width: @tablet-width) {
     width: 640px;
@@ -25,20 +26,28 @@
 }
 
 .price__title {
-  width: 320px;
+  // width: 280px;
   background-color: @bg-darkblue;
+  padding: 20px 90px;
   font-size: 18px;
   line-height: 30px;
+  border: 2px solid @bg-grey;
   color: @font-color-white;
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 160px;
+    min-width: 154px;
+    padding: 20px 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 240px;
+    min-width: 235px;
+    padding: 20px 0;
   }
+}
+
+.price__item {
+  border: 2px solid @bg-grey;
 }
 
 .price__title-addition {
@@ -56,12 +65,42 @@
 }
 
 .price__text {
-  padding: 15px 10px;
+  min-width: 154px;
+  padding: 15px 0;
   background-color: #ffffff;
   line-height: 30px;
   color: @bg-darkblue;
+  text-align: center;
   text-transform: uppercase;
-  border-bottom: 2px solid @bg-grey;
+  border: 2px solid @bg-grey;
+
+  &--hide {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: table-cell;
+    }
+  }
+}
+
+.icon-yes {
+  fill: #3dc644;
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.icon-no {
+  fill: #f25b26;
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .price__toggles {

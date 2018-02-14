@@ -1,45 +1,62 @@
 .main-nav {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+
+  @media (min-width: @desktop-width) {
+    position: static;
+    width: 645px;
+  }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
+  padding: 0;
   border: none;
   outline: none;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    bottom: 45px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
-.main-nav--closed .main-nav__toggle::before {
+.main-nav__toggle::before {
   content: "";
+  display: block;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: -24px;
+  right: 0;
   width: 50px;
   height: 24px;
   background-color: transparent;
   background-image: url("../img/icon-menu-burger.svg");
-}
+  z-index: -1;
 
-.main-nav--opened .main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  right: 20px;
-  width: 24px;
-  height: 24px;
-  background-color: transparent;
-  background-image: url("../img/icon-menu-cross.svg");
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
-  display: none;
-  width: 320px;
+  // display: none;
   background-color: @bg-darkblue;
   .reset-list;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+  }
 }
 
 .main-nav__link {
@@ -55,9 +72,55 @@
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+
+  @media (min-width: @desktop-width) {
+    border: none;
+    background-color: transparent;
+    text-transform: none;
+    font-weight: lighter;
+
+    &:hover,
+    &:focus {
+      color: #d22856;
+      outline: none;
+    }
+
+    &:active {
+      color: @font-color-white;
+      opacity: 0.3;
+    }
+
+    &--current::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background-color: @font-color-white;
+    }
+  }
 }
 
 .main-nav__link--top {
   text-align: left;
   padding: 25px 20px;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__item--top::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  width: 27px;
+  height: 27px;
+  background-color: transparent;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }

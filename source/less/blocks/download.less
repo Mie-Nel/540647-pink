@@ -6,6 +6,12 @@
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 0;
+    top: -500px;
+  }
 }
 
 .download__title {
@@ -27,9 +33,9 @@
   text-decoration: none;
   background-color: @bg-darkblue;
 
-  // @media (min-width: @tablet-width) {
-  //   background-color: transparent;
-  // }
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+  }
 }
 
 .download__list {
