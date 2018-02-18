@@ -34,8 +34,9 @@
   @media (min-width: @desktop-width) {
     padding-top: 66px;
     padding-bottom: 92px;
+  }
 }
-}
+
 .price__table {
   box-sizing: border-box;
   width: 840px;
@@ -72,51 +73,52 @@
     font-size: 24px;
     font-weight: lighter;
 
-      &--hit::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
+    &--hit::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 74px;
+      height: 73px;
+      background-image: url("../img/bg-hit.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: @tablet-width) {
+        width: 61px;
+        height: 61px;
+        background-image: url("../img/bg-hit-tablet.svg");
+        background-repeat: no-repeat;
+      }
+
+      @media (min-width: @desktop-width) {
         width: 74px;
         height: 73px;
         background-image: url("../img/bg-hit.svg");
         background-repeat: no-repeat;
-
-        @media (min-width: @tablet-width) {
-          width: 61px;
-          height: 61px;
-          background-image: url("../img/bg-hit-tablet.svg");
-          background-repeat: no-repeat;
-        }
-
-        @media (min-width: @desktop-width) {
-          width: 74px;
-          height: 73px;
-          background-image: url("../img/bg-hit.svg");
-          background-repeat: no-repeat;
-        }
+      }
     }
-         &--hit::after {
-        content: "ХИТ";
-        position: absolute;
+
+    &--hit::after {
+      content: "ХИТ";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 74px;
+      height: 73px;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: bold;
+      transform: rotate(-45deg);
+
+      @media (min-width: @tablet-width) {
+        top: 0;
+      }
+
+      @media (min-width: @desktop-width) {
         top: 8px;
-        left: 0;
-        width: 74px;
-        height: 73px;
-        font-size: 14px;
-        line-height: 30px;
-        font-weight: bold;
-        transform: rotate(-45deg);
-
-        @media (min-width: @tablet-width) {
-          top: 0;
-        }
-
-        @media (min-width: @desktop-width) {
-          top: 8px;
-        }
+      }
+    }
   }
-}
 
   @media (min-width: @tablet-width) {
     width: 140px;
