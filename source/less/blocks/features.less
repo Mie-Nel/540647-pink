@@ -1,19 +1,47 @@
+.features {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 74px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 175px;
+    right: 0;
+    width: 120%;
+    height: 150px;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-size: 101%;
+    transform: scale(-1, -1);
+    opacity: 0.05;
+
+    @media (min-width: @tablet-width) {
+      top: 150px;
+      width: 120%;
+    }
+
+     @media (min-width: @desktop-width) {
+      top: 240px;
+      width: 100%;
+     }
+  }
+}
+
 .features__wrapper-slogan {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-  padding-top: 40px;
 
   @media (min-width: @tablet-width) {
     width: 620px;
     padding: 0 20px;
-    padding-top: 60px;
   }
 
   @media (min-width: @desktop-width) {
     width: 940px;
     padding: 0 10px;
-    padding-top: 80px;
   }
 }
 
